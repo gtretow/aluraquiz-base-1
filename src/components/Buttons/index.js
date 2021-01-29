@@ -1,0 +1,30 @@
+/* eslint-disable quotes */
+import styled from "styled-components";
+
+const Button = styled.button`
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.colors.primary};
+  padding: 0.7rem 0;
+  margin: 1.5em 2.5em;
+  width: 11rem;
+  font-family: "Lato";
+  font-size: 20px;
+  color: ${({ theme }) => theme.colors.black};
+  border: 1px solid #333a31;
+  /* transition: 0.1s ease-in-out; */
+  transition: all 0.1s;
+
+  
+
+  :hover {
+    background-color: ${({ theme }) => theme.colors.hover};
+    color: ${({ theme }) => theme.colors.contrastText};
+  }
+
+  :disabled {
+    background-color: gray;
+    color: #333a31;
+  }
+`;
+
+export default Button;
